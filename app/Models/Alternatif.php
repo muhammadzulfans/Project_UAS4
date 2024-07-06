@@ -11,7 +11,10 @@ class Alternatif extends Model
 
     protected $fillable = [
         'kode_alternatif',
-        'nama',
-        'alamat'
+        'ketersediaan_fasilitas',
+        'kebutuhan_pelanggan',
+        'kualitas_pelayanan',
+        'jarak_waktu',
+        'biaya'
     ];
 }

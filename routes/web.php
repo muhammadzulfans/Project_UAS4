@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AlternatifController;
 use App\Http\Controllers\kriteriaController;
+use App\Http\Controllers\PerhitunganController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProductController;
@@ -81,7 +82,7 @@ Route::middleware('auth')->group(function () {
     });
 
 
-    
+    Route::get('/perhitungan', [PerhitunganController::class, 'hitungSAW'])->name('hitung');
     Route::get('/profile', [App\Http\Controllers\AuthController::class, 'profile'])->name('profile');
     Route::get('/profileSetting', [App\Http\Controllers\AuthController::class, 'profileSetting'])->name('profileSetting');
 

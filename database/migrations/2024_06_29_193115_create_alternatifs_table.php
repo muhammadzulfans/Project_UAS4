@@ -14,8 +14,11 @@ return new class extends Migration
         Schema::create('alternatifs', function (Blueprint $table) {
             $table->id();
             $table->string('kode_alternatif');
-            $table->string('nama');
-            $table->string('alamat');
+            $table->integer('ketersediaan_fasilitas');
+            $table->integer('kebutuhan_pelanggan');
+            $table->integer('kualitas_pelayanan');
+            $table->integer('jarak_waktu');
+            $table->integer('biaya');
             $table->timestamps();
         });
     }

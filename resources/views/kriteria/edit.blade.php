@@ -10,32 +10,22 @@
         @method('PUT')
         <div class="row">
             <div class="col mb-3">
-                <label class="form-label">Kode Alternatif</label>
-                <input type="text" name="kode_alternatif" class="form-control" placeholder="Kode Alternatif" value="{{ $kriteria->kode_alternatif }}" >
+                <label class="form-label">Kode Kriteria</label>
+                <input type="text" name="kode_kriteria" class="form-control" placeholder="kriteria" value="{{ $kriteria->kode_kriteria }}" >
             </div>
             <div class="col mb-3">
-                <label class="form-label">Ketersediaan Fasilitas</label>
-                <input type="text" name="ketersediaan_fasilitas" class="form-control" placeholder="Ketersediaan Fasilitas" value="{{ $kriteria->ketersediaan_fasilitas }}" >
+                <label class="form-label">Nama Kriteria</label>
+                <input type="text" name="nama_kriteria" class="form-control" placeholder="Nama" value="{{ $kriteria->nama_kriteria }}" >
             </div>
         </div>
         <div class="row">
             <div class="col mb-3">
-                <label class="form-label">Kebutuhan Pelanggan</label>
-                <input type="text" name="kebutuhan_pelanggan" class="form-control" placeholder="Kebutuhan Pelanggan" value="{{ $kriteria->kebutuhan_pelanggan }}" >
+                <label class="form-label">Bobot Kriteria</label>
+                <input type="text" name="bobot_kriteria" class="form-control" placeholder="Bobot Kriteria" value="{{ $kriteria->bobot_kriteria }}" >
             </div>
             <div class="col mb-3">
-                <label class="form-label">Kualitas Pelayanan</label>
-                <input type="text" name="kualitas_pelayanan" class="form-control" placeholder="Kualitas Pelayanan" value="{{ $kriteria->kualitas_pelayanan }}" >
-            </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col mb-3">
-                <label class="form-label">Jarak Waktu</label>
-                <input type="text" name="jarak_waktu" class="form-control" placeholder="Jarak Waktu" value="{{ $kriteria->jarak_waktu }}" >
-            </div>
-            <div class="col-6">
-                <label class="form-label">Biaya</label>
-                <input type="text" name="biaya" class="form-control" placeholder="Biaya" value="{{ $kriteria->biaya }}" >
+                <label class="form-label">Type</label>
+                <input type="text" name="type" class="form-control" placeholder="Type" value="{{ $kriteria->type }}" >
             </div>
         </div>
         <div class="row">
@@ -45,4 +35,3 @@
         </div>
     </form>
 @endsection
-
