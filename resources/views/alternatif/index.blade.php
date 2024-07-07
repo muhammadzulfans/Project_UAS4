@@ -4,7 +4,7 @@
 
 @section('contents')
     <div class="d-flex align-items-center justify-content-between">
-        <h1 class="mb-0">List Kriteria</h1>
+        <h1 class="mb-0">List Alternatif</h1>
         <a href="{{ route('alternatif.create') }}" class="btn btn-primary">Add Alternatif</a>
     </div>
     <hr />
