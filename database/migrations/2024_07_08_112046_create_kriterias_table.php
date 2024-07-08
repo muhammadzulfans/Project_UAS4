@@ -6,19 +6,17 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
+   /**
      * Run the migrations.
      */
     public function up(): void
     {
-        Schema::create('alternatifs', function (Blueprint $table) {
+        Schema::create('kriteria', function (Blueprint $table) {
             $table->id();
-            $table->string('kode_alternatif');
-            $table->integer('ketersediaan_fasilitas');
-            $table->integer('kebutuhan_pelanggan');
-            $table->integer('kualitas_pelayanan');
-            $table->integer('jarak_waktu');
-            $table->integer('biaya');
+            $table->string('kode_kriteria');
+            $table->string('nama_kriteria');
+            $table->double('bobot_kriteria');
+            $table->String('type');
             $table->timestamps();
         });
     }
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('alternatifs');
+        Schema::dropIfExists('kriteria');
     }
 };

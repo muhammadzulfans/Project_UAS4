@@ -20,13 +20,13 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('alternatif') }}">
+        <a class="nav-link" href="/alternative">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Alternatif</span></a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('kriteria') }}">
+        <a class="nav-link" href="/kriteria">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Kriteria</span></a>
     </li>
@@ -38,16 +38,16 @@
     </li>
 
     <li class="nav-item">
-        <a class="nav-link" href="{{ route('hitung') }}">
+        <a class="nav-link" href="/hitung">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Peringkat</span></a>
     </li>
 
-    <li class="nav-item">
-        <a class="nav-link" href="{{ route('products') }}">
+    {{-- <li class="nav-item">
+        <a class="nav-link" href="#">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>products</span></a>
-    </li>
+    </li> --}}
 
     <hr class="sidebar-divider d-none d-md-block">
 
