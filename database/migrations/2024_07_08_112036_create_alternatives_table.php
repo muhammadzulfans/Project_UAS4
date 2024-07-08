@@ -11,20 +11,24 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('alternatifs', function (Blueprint $table) {
+        Schema::create('alternative', function (Blueprint $table) {
             $table->id();
-            $table->string('kode_alternatif');
-            $table->string('nama');
-            $table->string('alamat');
+            $table->string('nama_supplier');
+            $table->string('C1');
+            $table->string('C2');
+            $table->string('C3');
+            $table->string('C4');
+            $table->string('C5');
+            $table->string('kriteria_id')->nullable(true);
             $table->timestamps();
         });
-    }
+    }   
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('alternatifs');
+        Schema::dropIfExists('alternative');
     }
 };

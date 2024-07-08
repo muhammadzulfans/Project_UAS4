@@ -8,14 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Kriteria extends Model
 {
     use HasFactory;
+    
+    protected $table = 'kriteria'; 
 
     protected $fillable = [
-        'kode_alternatif',
-        'ketersediaan_fasilitas',
-        'kebutuhan_pelanggan',
-        'kualitas_pelayanan',
-        'jarak_waktu',
-        'biaya'
+        'kode_kriteria',
+        'nama_kriteria',
+        'bobot_kriteria',
+        'type',
     ];
+    public function alternatif(){
+        return $this->hasMany(alternative::class, 'kriteria_id', 'id');
+    }
 }
-

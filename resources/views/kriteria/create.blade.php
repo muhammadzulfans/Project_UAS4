@@ -9,28 +9,22 @@
         @csrf
         <div class="row mb-3">
             <div class="col">
-                <input type="text" name="kode_alternatif" class="form-control" placeholder="Kode Alternatif">
+                <input type="text" name="kode_kriteria" class="form-control" placeholder="Kode kriteria">
             </div>
             <div class="col">
-                <input type="text" name="ketersediaan_fasilitas" class="form-control" placeholder="Ketersediaan Fasilitas">
+                <input type="text" name="nama_kriteria" class="form-control" placeholder="Nama Kriteria">
             </div>
         </div>
+
         <div class="row mb-3">
             <div class="col">
-                <input type="text" name="kebutuhan_pelanggan" class="form-control" placeholder="Kebutuhan Pelanggan">
+                <input type="text" name="bobot_kriteria" class="form-control" placeholder="Bobot Kriteria">
             </div>
-            <div class="col-6">
-                <input type="text" name="kualitas_pelayanan" class="form-control" placeholder="Kualitas Pelayanan">
-            </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-6">
-                <input type="text" name="jarak_waktu" class="form-control" placeholder="jarak Waktu">
-            </div>
-            <div class="col-6">
-                <input type="text" name="biaya" class="form-control" placeholder="Biaya">
+            <div class="col">
+                <input type="text" name="type" class="form-control" placeholder="Type">
             </div>
         </div>
+
         <div class="row">
             <div class="col text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -38,5 +32,3 @@
         </div>
     </form>
 @endsection 
-
-

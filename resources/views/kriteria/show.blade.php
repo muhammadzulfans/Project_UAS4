@@ -7,35 +7,24 @@
     <hr />
     <div class="row">
         <div class="col mb-3">
-            <label class="form-label">Kode ALternatif</label>
-            <input type="text" name="kode_alternatif" class="form-control" placeholder="Kode Alternatif" value="{{ $kriteria->kode_alternatif }}" readonly>
+            <label class="form-label">Kode Kriteria</label>
+            <input type="text" name="kode_kriteria" class="form-control" placeholder="Kode kriteria" value="{{ $kriteria->kode_kriteria }}" readonly>
         </div>
         <div class="col mb-3">
-            <label class="form-label">Ketersedian Fasilitas</label>
-            <input type="text" name="ketersediaan_fasilitas" class="form-control" placeholder="Ketersedian Fasilitas" value="{{ $kriteria->ketersediaan_fasilitas }}" readonly>
+            <label class="form-label">Nama Kriteria</label>
+            <input type="text" name="nama_kriteria" class="form-control" placeholder="Nama Kriteria" value="{{ $kriteria->nama_kriteria }}" readonly>
         </div>
     </div>
     <div class="row">
         <div class="col mb-3">
-            <label class="form-label">Kebutuhan Pelanggan</label>
-            <input type="text" name="kebutuhan_pelanggan" class="form-control" placeholder="Kebutuhan Pelanggan" value="{{ $kriteria->kebutuhan_pelanggan }}" readonly>
+            <label class="form-label">Bobot Kriteria</label>
+            <input type="text" name="bobot_kriteria" class="form-control" placeholder="Bobot Kriteria" value="{{ $kriteria->bobot_kriteria }}" readonly>
         </div>
         <div class="col mb-3">
-            <label class="form-label">Kualitas Pelayanan</label>
-            <input type="text" name="kualitas_pelayanan" class="form-control" placeholder="Kualitas Pelayanan" value="{{ $kriteria->kualitas_pelayanan }}" readonly>
+            <label class="form-label">Type</label>
+            <input type="text" name="type" class="form-control" placeholder="Type" value="{{ $kriteria->type }}" readonly>
         </div>
     </div>
-    <div class="row">
-        <div class="col mb-3">
-            <label class="form-label">Jarak Waktu</label>
-            <input type="text" name="jarak_waktu" class="form-control" placeholder="Jarak Waktu" value="{{ $kriteria->jarak_waktu }}" readonly>
-        </div>
-        <div class="col mb-3">
-            <label class="form-label">Biaya</label>
-            <input type="text" name="biaya" class="form-control" placeholder="Biaya" value="{{ $kriteria->biaya }}" readonly>
-        </div>
-    </div>
-
     <div class="row">
         <div class="col mb-3">
             <label class="form-label">Created At</label>
@@ -47,9 +36,3 @@
         </div>
     </div>
 @endsection
-
-{{-- ketersediaan_fasilitas
-kebutuhan_pelanggan
-kualitas_pelayanan
-jarak_waktu
-biaya --}}
