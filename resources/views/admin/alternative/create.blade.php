@@ -28,7 +28,7 @@
 
             <div class="row mb-3">
                 <div class="col">
-                    <label for="nama_supplier" class="form-label">Nama Supplier</label>
+                    <label for="nama_supplier" class="form-label">Nama Alternatif</label>
                     <input type="text" name="nama_supplier" id="nama_supplier" class="form-control" required />
                 </div>
             </div>

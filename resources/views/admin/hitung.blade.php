@@ -1,8 +1,18 @@
 @extends('layouts.app')
 
-@section('title', 'Dashboard - Laravel Admin Panel With Login and Resgistration')
+@section('title')
 
 @section('contents')
+    <div class="hero"
+        style="background-image: url('https://www.indonesia.travel/content/dam/indtravelrevamp/en/destinations/revisi-2020/karimunimage2.jpg'); background-size: cover; background-position: center;">
+        <div class="hero-content text-center text-white py-5">
+            <h1 class="display-4" style="color: black; font-weight: bold;">Perhitungan SPK Metode SAW Perusahaan Tour & Travel
+            </h1>
+            <p class="lead" style="color: black; font-weight: bold;">Temukan paket wisata
+                eksklusif dan layanan terbaik
+                di perusahaan kami.</p>
+        </div>
+    </div>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mb-6">
             <!-- Tabel Utama -->
@@ -42,7 +52,7 @@
                 <!-- Bobot -->
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mb-6">
                     <div class="p-6 sm:px-20 bg-white border-b border-gray-200 overflow-y-auto">
-                        <h3 class="text-xl font-semibold text-gray-800 leading-tight mb-4">Bobot</h3>
+                        <h3 class="text-xl font-semibold text-gray-900 leading-tight mt-5">Bobot</h3>
                         <table class="min-w-full bg-white">
                             <thead>
                                 <tr>
@@ -55,7 +65,7 @@
                             <tbody>
                                 <tr>
                                     @foreach ($kriterias as $kriteria)
-                                        <td class="border text-center px-4 py-2">{{ $kriteria->bobot_kriteria }}</td>
+                                        <td class="border text-center px-5 py-2">{{ $kriteria->bobot_kriteria }}</td>
                                     @endforeach
                                 </tr>
                             </tbody>
@@ -66,13 +76,13 @@
                 <!-- Normalisasi -->
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg mb-6">
                     <div class="p-6 sm:px-20 bg-white border-b border-gray-200 overflow-y-auto">
-                        <h3 class="text-xl font-semibold text-gray-800 leading-tight mb-4">Normalisasi</h3>
+                        <h3 class="text-xl font-semibold text-gray-900 leading-tight mt-5">Normalisasi</h3>
                         <table class="min-w-full bg-white">
                             <thead>
                                 <tr>
-                                    <th class="py-2">Nama Supplier</th>
+                                    <th class="p-4">Nama Alternatif</th>
                                     @foreach ($kriterias as $kriteria)
-                                        <th class="py-2">{{ $kriteria->nama_kriteria }}</th>
+                                        <th class="py-2 px-5">{{ $kriteria->nama_kriteria }}</th>
                                     @endforeach
                                 </tr>
                             </thead>
@@ -94,12 +104,12 @@
                 <!-- Hasil Perhitungan SAW -->
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                     <div class="p-6 sm:px-20 bg-white border-b border-gray-200 overflow-y-auto">
-                        <h3 class="text-xl font-semibold text-gray-800 leading-tight mb-4">Hasil Perhitungan SAW</h3>
+                        <h3 class="text-xl font-semibold text-gray-900 leading-tight mt-5">Hasil Perhitungan SAW</h3>
                         <table class="min-w-full bg-white">
                             <thead>
                                 <tr>
-                                    <th class="py-2">Nama Supplier</th>
-                                    <th class="py-2">Nilai SAW</th>
+                                    <th class="p-4">Nama Alternatif</th>
+                                    <th class="p-4">Nilai SAW</th>
                                 </tr>
                             </thead>
                             <tbody>

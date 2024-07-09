@@ -1,6 +1,11 @@
-<x-app-layout>
+@extends('layouts.app')
+
+@section('title', 'Dashboard - Laravel Admin Panel With Login and Resgistration')
+
+@section('contents')
     <div class="container mx-auto p-5 min-h-screen bg-gray-100">
         <h1 class="text-2xl mb-4 font-semibold text-gray-800">Edit Alternatif</h1>
+        <hr />
 
         @if ($errors->any())
             <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
@@ -19,7 +24,7 @@
             @method('PUT')
 
             <div class="mb-4">
-                <label for="nama_supplier" class="block text-gray-700 text-sm font-bold mb-2">Nama Supplier:</label>
+                <label for="nama_supplier" class="block text-gray-700 text-sm font-bold mb-2">Nama Alternatif:</label>
                 <input type="text" name="nama_supplier" id="nama_supplier" value="{{ $alternatives->nama_supplier }}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
             </div>
 
@@ -48,11 +53,11 @@
                 <input type="text" name="C5" id="C5" value="{{ $alternatives->C5 }}" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
             </div>
 
-            <div class="flex items-center justify-between">
-                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                    Update
-                </button>
+            <div class="row">
+                <div class="d-grid">
+                    <button class="btn btn-warning">Update</button>
+                </div>
             </div>
         </form>
     </div>
-</x-app-layout>
+@endsection

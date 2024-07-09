@@ -53,44 +53,53 @@ Route::middleware('auth')->group(function () {
         return view('dashboard');
     })->name('dashboard');
     
-    // Route::controller(ProductController::class)->prefix('products')->group(function () {
-    //     Route::get('', 'index')->name('products');
-    //     Route::get('create', 'create')->name('products.create');
-    //     Route::post('store', 'store')->name('products.store');
-    //     Route::get('show/{id}', 'show')->name('products.show');
-    //     Route::get('edit/{id}', 'edit')->name('products.edit');
-    //     Route::put('edit/{id}', 'update')->name('products.update');
-    //     Route::delete('destroy/{id}', 'destroy')->name('products.destroy');
-    // });
-
-    // Route::controller(AlternatifController::class)->prefix('alternatif')->group(function () {
-    //     Route::get('', 'index')->name('alternatif');
-    //     Route::get('create', 'create')->name('alternatif.create');
-    //     Route::post('store', 'store')->name('alternatif.store');
-    //     Route::get('show/{id}', 'show')->name('alternatif.show');
-    //     Route::get('edit/{id}', 'edit')->name('alternatif.edit');
-    //     Route::put('edit/{id}', 'update')->name('alternatif.update');
-    //     Route::delete('destroy/{id}', 'destroy')->name('alternatif.destroy');
-    // });
-
+    
     Route::resource('alternative', AlternativeController::class);
     Route::resource('kriteria', KriteriaController::class);
     // Route::resource('nilai', nilaiController::class);
     Route::get('/hitung', [HitungController::class, 'hitungSAW'])->name('hitung');
-
-    // Route::controller(kriteriaController::class)->prefix('kriteria')->group(function () {
-    //     Route::get('', 'index')->name('kriteria');
-    //     Route::get('create', 'create')->name('kriteria.create');
-    //     Route::post('store', 'store')->name('kriteria.store');
-    //     Route::get('show/{id}', 'show')->name('kriteria.show');
-    //     Route::get('edit/{id}', 'edit')->name('kriteria.edit');
-    //     Route::put('edit/{id}', 'update')->name('kriteria.update');
-    //     Route::delete('destroy/{id}', 'destroy')->name('kriteria.destroy');
-    // });
-
-
+    
+    
+    
     // Route::get('/perhitungan', [PerhitunganController::class, 'hitungSAW'])->name('hitung');
     Route::get('/profile', [App\Http\Controllers\AuthController::class, 'profile'])->name('profile');
     Route::get('/profileSetting', [App\Http\Controllers\AuthController::class, 'profileSetting'])->name('profileSetting');
-
+    
 });
+
+
+
+
+
+
+
+// Route::controller(ProductController::class)->prefix('products')->group(function () {
+//     Route::get('', 'index')->name('products');
+//     Route::get('create', 'create')->name('products.create');
+//     Route::post('store', 'store')->name('products.store');
+//     Route::get('show/{id}', 'show')->name('products.show');
+//     Route::get('edit/{id}', 'edit')->name('products.edit');
+//     Route::put('edit/{id}', 'update')->name('products.update');
+//     Route::delete('destroy/{id}', 'destroy')->name('products.destroy');
+// });
+
+// Route::controller(AlternatifController::class)->prefix('alternatif')->group(function () {
+//     Route::get('', 'index')->name('alternatif');
+//     Route::get('create', 'create')->name('alternatif.create');
+//     Route::post('store', 'store')->name('alternatif.store');
+//     Route::get('show/{id}', 'show')->name('alternatif.show');
+//     Route::get('edit/{id}', 'edit')->name('alternatif.edit');
+//     Route::put('edit/{id}', 'update')->name('alternatif.update');
+//     Route::delete('destroy/{id}', 'destroy')->name('alternatif.destroy');
+// });
+
+
+// Route::controller(kriteriaController::class)->prefix('kriteria')->group(function () {
+    //     Route::get('', 'index')->name('kriteria');
+//     Route::get('create', 'create')->name('kriteria.create');
+//     Route::post('store', 'store')->name('kriteria.store');
+//     Route::get('show/{id}', 'show')->name('kriteria.show');
+//     Route::get('edit/{id}', 'edit')->name('kriteria.edit');
+//     Route::put('edit/{id}', 'update')->name('kriteria.update');
+//     Route::delete('destroy/{id}', 'destroy')->name('kriteria.destroy');
+// });

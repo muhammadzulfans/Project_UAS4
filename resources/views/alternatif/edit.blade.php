@@ -8,7 +8,7 @@
     <form action="{{ route('alternatif.update', $alternatif->id) }}" method="POST">
         @csrf
         @method('PUT')
-        <div class="row">
+        <div class="row ">
             <div class="col mb-3">
                 <label class="form-label">Kode Alternatif</label>
                 <input type="text" name="kode_alternatif" class="form-control" placeholder="Kode Alternatif" value="{{ $alternatif->kode_alternatif }}" >
@@ -33,7 +33,7 @@
                 <label class="form-label">Jarak Waktu</label>
                 <input type="text" name="jarak_waktu" class="form-control" placeholder="Jarak Waktu" value="{{ $alternatif->jarak_waktu }}" >
             </div>
-            <div class="col-6">
+            <div class="col-3">
                 <label class="form-label">Biaya</label>
                 <input type="text" name="biaya" class="form-control" placeholder="Biaya" value="{{ $alternatif->biaya }}" >
             </div>
